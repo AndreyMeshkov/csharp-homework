@@ -29,7 +29,14 @@ namespace task1
             }
             else if (operation == "/")
             {
-                Console.WriteLine(firstNum + " " + operation + " " + secondNum + " = " + (firstNum / secondNum));
+                if (secondNum == 0)
+                {
+                    Console.WriteLine("Division by zero");
+                }
+                else
+                {
+                    Console.WriteLine(firstNum + " " + operation + " " + secondNum + " = " + (firstNum / secondNum));
+                }
             }
             else
             {
