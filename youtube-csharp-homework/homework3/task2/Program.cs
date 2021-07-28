@@ -28,9 +28,18 @@ namespace task2
                     Console.WriteLine(firstNum + " " + operation + " " + secondNum + " = " + (firstNum * secondNum));
                     break;
                 case "/":
-                    Console.WriteLine(firstNum + " " + operation + " " + secondNum + " = " + (firstNum / secondNum));
+                    if(secondNum == 0)
+                    {
+                        Console.WriteLine("Division by 0");
+                    }
+                    else
+                    {
+                        Console.WriteLine(firstNum + " " + operation + " " + secondNum + " = " + (firstNum / secondNum));
+                    }
                     break;
-
+                default:
+                    Console.WriteLine("Invalid operator");
+                    break;
             }
             Console.ReadLine();
         }
