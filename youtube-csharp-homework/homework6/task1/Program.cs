@@ -27,7 +27,7 @@ namespace task1
                 }
             }
             Console.WriteLine($"Sum of even numbers = {sumOfEvenNumbers}");
-            Console.WriteLine($"Minimum numbers of array is {minValue}");
+            Console.WriteLine($"Minimum number in an array is {minValue}");
             Console.ReadLine();
         }
     }
